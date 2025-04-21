@@ -1,0 +1,8 @@
+prefix=/home/srikaanth/harvtech_ws/devel
+
+Name: regulated_pure_pursuit_controller
+Description: Description of regulated_pure_pursuit_controller
+Version: 0.0.1
+Cflags: -I/home/srikaanth/harvtech_ws/src/regulated_pure_pursuit_controller/include
+Libs: -L${prefix}/lib -lregulated_pure_pursuit_controller
+Requires: pluginlib roscpp base_local_planner costmap_2d nav_core nav_msgs pluginlib ddynamic_reconfigure tf mbf_msgs mbf_costmap_core

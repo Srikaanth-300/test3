@@ -1,0 +1,34 @@
+\subsubsection usage Usage
+\verbatim
+<node name="graceful_controller" pkg="graceful_controller" type="graceful_controller">
+  <param name="max_vel_x" type="double" value="0.5" />
+  <param name="min_vel_x" type="double" value="0.1" />
+  <param name="max_vel_theta" type="double" value="1.0" />
+  <param name="min_in_place_vel_theta" type="double" value="0.4" />
+  <param name="max_x_to_max_theta_scale_factor" type="double" value="100.0" />
+  <param name="acc_lim_x" type="double" value="2.5" />
+  <param name="acc_lim_theta" type="double" value="3.2" />
+  <param name="decel_lim_x" type="double" value="0.0" />
+  <param name="xy_goal_tolerance" type="double" value="0.1" />
+  <param name="yaw_goal_tolerance" type="double" value="0.1" />
+  <param name="xy_vel_goal_tolerance" type="double" value="1.0" />
+  <param name="yaw_vel_goal_tolerance" type="double" value="1.0" />
+  <param name="k1" type="double" value="2.0" />
+  <param name="k2" type="double" value="1.0" />
+  <param name="beta" type="double" value="0.4" />
+  <param name="lambda" type="double" value="2.0" />
+  <param name="min_lookahead" type="double" value="0.05" />
+  <param name="max_lookahead" type="double" value="1.0" />
+  <param name="initial_rotate_tolerance" type="double" value="0.1" />
+  <param name="prefer_final_rotation" type="bool" value="False" />
+  <param name="compute_orientations" type="bool" value="True" />
+  <param name="use_orientation_filter" type="bool" value="True" />
+  <param name="yaw_filter_tolerance" type="double" value="0.0" />
+  <param name="yaw_gap_tolerance" type="double" value="0.0" />
+  <param name="latch_xy_goal_tolerance" type="bool" value="False" />
+  <param name="scaling_vel_x" type="double" value="0.5" />
+  <param name="scaling_factor" type="double" value="0.0" />
+  <param name="scaling_step" type="double" value="0.1" />
+</node>
+\endverbatim
+

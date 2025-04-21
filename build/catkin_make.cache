@@ -1,0 +1,2 @@
+global_planner_f2c:graceful_controller/graceful_controller:graceful_controller/graceful_controller_ros:navigation:regulated_pure_pursuit_controller:ublox/ublox:ublox/ublox_gps:ublox/ublox_msg_filters:ublox/ublox_msgs:ublox/ublox_serialization
+-DCATKIN_DEVEL_PREFIX=/home/srikaanth/harvtech_ws/devel -DCMAKE_INSTALL_PREFIX=/home/srikaanth/harvtech_ws/install -G Unix Makefiles

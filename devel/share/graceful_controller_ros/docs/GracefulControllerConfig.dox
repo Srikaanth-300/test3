@@ -1,0 +1,33 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~max_vel_x" : \b [double] The maximum x velocity for the robot in m/s min: -std::numeric_limits<double>::infinity(), default: 0.5, max: std::numeric_limits<double>::infinity()
+- \b "~min_vel_x" : \b [double] The minimum x velocity for the robot in m/s min: -std::numeric_limits<double>::infinity(), default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~max_vel_theta" : \b [double] The absolute value of the maximum rotational velocity for the robot in rad/s min: 0.0, default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~min_in_place_vel_theta" : \b [double] The absolute value of the minimum in-place rotational velocity the controller will explore min: 0.0, default: 0.4, max: 20.0
+- \b "~max_x_to_max_theta_scale_factor" : \b [double] Limits actual maximum rotational velocity to this factor multiplied by the local maximum linear velocity (rad/m) min: 0.1, default: 100.0, max: 100.0
+- \b "~acc_lim_x" : \b [double] The acceleration limit of the robot in the x direction min: 0.0, default: 2.5, max: 20.0
+- \b "~acc_lim_theta" : \b [double] The acceleration limit of the robot in the theta direction min: 0.0, default: 3.2, max: 20.0
+- \b "~decel_lim_x" : \b [double] The deceleration limit of the robot in the x direction min: 0.0, default: 0.0, max: 20.0
+- \b "~xy_goal_tolerance" : \b [double] Within what maximum distance we consider the robot to be in goal min: -std::numeric_limits<double>::infinity(), default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~yaw_goal_tolerance" : \b [double] Within what maximum angle difference we consider the robot to face goal direction min: -std::numeric_limits<double>::infinity(), default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~xy_vel_goal_tolerance" : \b [double] Maximum speed that robot can be moving at when latching goal min: -std::numeric_limits<double>::infinity(), default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~yaw_vel_goal_tolerance" : \b [double] Maximum speed that robot can be rotating at when latching goal min: -std::numeric_limits<double>::infinity(), default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~k1" : \b [double] Ratio of rate of change of theta to rate of change of R min: 0.0, default: 2.0, max: 10.0
+- \b "~k2" : \b [double] How quickly we converge to the slow manifold min: 0.0, default: 1.0, max: 10.0
+- \b "~beta" : \b [double] Parameters for selecting velocity from curvature min: 0.0, default: 0.4, max: 10.0
+- \b "~lambda" : \b [double] Parameters for selecting velocity from curvature min: 0.0, default: 2.0, max: 10.0
+- \b "~min_lookahead" : \b [double] Minimum distance to target goal min: 0.0, default: 0.05, max: std::numeric_limits<double>::infinity()
+- \b "~max_lookahead" : \b [double] Maximum distance to target goal min: 0.0, default: 1.0, max: std::numeric_limits<double>::infinity()
+- \b "~initial_rotate_tolerance" : \b [double] Tolerance for initial rotation to complete (0.0 to disable) min: 0.0, default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~prefer_final_rotation" : \b [bool] Prefer an in-place rotation at the end pose when possible min: False, default: False, max: True
+- \b "~compute_orientations" : \b [bool] Recompute plan orientations. Useful when global planner does not set proper orientations min: False, default: True, max: True
+- \b "~use_orientation_filter" : \b [bool] Enables the orientation filter. Useful when global planner does not set proper orientations min: False, default: True, max: True
+- \b "~yaw_filter_tolerance" : \b [double] Maximum deviation from beeline allowed before a pose is filtered min: 0.785, default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~yaw_gap_tolerance" : \b [double] Maximum distance between poses in the filtered path min: 0.25, default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~latch_xy_goal_tolerance" : \b [bool] When goal has been reached, just fix heading min: False, default: False, max: True
+- \b "~scaling_vel_x" : \b [double] Above this velocity, the footprint will be scaled up min: 0.0, default: 0.5, max: std::numeric_limits<double>::infinity()
+- \b "~scaling_factor" : \b [double] Amount to scale footprint when at max velocity min: 0.0, default: 0.0, max: std::numeric_limits<double>::infinity()
+- \b "~scaling_step" : \b [double] Amount to reduce x velocity when iteratively reducing velocity min: 0.01, default: 0.1, max: 1.0
+

@@ -1,0 +1,8 @@
+prefix=/home/srikaanth/harvtech_ws/devel
+
+Name: global_planner_f2c
+Description: Description of global_planner_f2c
+Version: 0.0.0
+Cflags: -I/home/srikaanth/harvtech_ws/src/global_planner_f2c/include
+Libs: -L${prefix}/lib -lf2c_global_planner
+Requires: costmap_2d nav_core roscpp tf2_ros plugin_lib geometry_msgs

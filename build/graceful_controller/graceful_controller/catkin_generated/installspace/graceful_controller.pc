@@ -1,0 +1,8 @@
+prefix=/home/srikaanth/harvtech_ws/install
+
+Name: graceful_controller
+Description: Description of graceful_controller
+Version: 0.4.8
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lgraceful_controller
+Requires: 
